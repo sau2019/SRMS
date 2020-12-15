@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SRMS Registration</title>
+<meta charset="UTF-8">
+<link rel="icon" 
+     type="image/jpg" 
+     href="picon.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+<style>
+td{
+padding:10px;
+}
+h1{ color:#1A5276;
+}
+
+input[type=text],select{
+    width: 100%;
+    padding: 8px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	}
+
+	
+body{
+color:brown;
+font-family:bold;
+font-size:20px;
+background-image:url("timage2.jpg");
+opacity:100;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<center>
+	<h1><i><b>Student Registration Form</b></i></h1>
+	<form method="post" action="registration.jsp">
+	<table cellpadding = "10" >
+		<tr><td>First Name:</td><td><input type="text" name="fname"></td></tr>
+		<tr><td>Last Name:</td><td><input type="text" name="lname"></td></tr>
+		<tr><td>Enrollment:</td><td><input type="text" name="enroll"></td></tr>
+		<tr><td>Branch:</td>
+		<td> 
+	<select id="branch" name="branch">
+      <option value="it">Information Technology</option>
+      <option value="cs">Computer Science</option>
+      <option value="ec">Electronics & Communication</option>
+	  <option value="ex">Electrical Electronics</option>
+	  <option value="me">Mechanical Engineering</option>
+    </select>
+	</td></tr>
+		<tr><td>Semester</td><td>
+		<select id="sem" name="sem">
+      <option value="1">1st</option>
+      <option value="2">2nd</option>
+      <option value="3">3rd</option>
+	  <option value="4">4th</option>
+	  <option value="5">5th</option>
+	  <option value="6">6th</option>
+	  <option value="7">7th</option>
+	  <option value="8">8th</option>
+    </select>
+		</td></tr>
+		<tr><td>Date of Birth:</td><td><input type="date" name="dob"></td></tr>
+		<tr><td>Father's Name:</td><td><input type="text"  name="ftname"></td></tr>
+		<tr><td>Address:</td><td><input type="text" name="add"></td></tr>
+		<tr><td>Email</td><td><input type="email"  name="email"></td></tr>
+		<tr><td>Mobile No:</td><td><input type="mobile"  id="t01" name="mo"></td></tr>
+		<tr><td>Choose UserName<br> & Password</td></tr>
+		<tr><td>UserName:</td><td><input type="text" name="user"></td></tr>
+		<tr><td>Password:</td><td><input type="password"  name="pass"></td></tr>
+		
+	
+	</table>
+	<br>
+	<button style="width:25%; color:white; background-color:tomato;border-radius:5px;padding:7px;"class=" w3-hover-green";">SUBMIT</button>
+	</form>
+	</center>
+</div>
+</body>
+</html>
